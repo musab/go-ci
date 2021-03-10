@@ -19,7 +19,7 @@ jobs:
           paths:
             - "/go/pkg/mod"
       - run:
-          name: Run tests
+          name: Save test results
           command: gotestsum --junitfile unit-tests.xml
-          - store_test_results:
-          path: /tmp/test-results
+      - store_test_results:
+          path: ~/cucumber
