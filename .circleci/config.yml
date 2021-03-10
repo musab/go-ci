@@ -22,4 +22,4 @@ jobs:
           name: Save test results
           command: gotestsum --junitfile unit-tests.xml
       - store_test_results:
-          path: ~/cucumber
+          path: results
