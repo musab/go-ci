@@ -19,7 +19,5 @@ jobs:
           paths:
             - "/go/pkg/mod"
       - run:
-          name: Save test results
+          name: Run tests
           command: gotestsum --junitfile unit-tests.xml
-      - store_test_results:
-          path: results
